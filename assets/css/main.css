@@ -530,13 +530,14 @@ body {
 }
 
 .toggle-btn::before {
-    content: 'DIGITAL CREATIVE AGENCY';
+    content: 'CREATIVE DESIGNER';
     position: absolute;
     width: 180px;
     font-size: 10px;
     letter-spacing: 2px;
     color: #fff;
     right: 60px;
+    text-align: right;
 }
 
 
@@ -1280,4 +1281,38 @@ a.phone {
     top: 10%;
     background: url('../img/work-detail/3.jpg') center center no-repeat;
     z-index: -4;
+}
+.service-text.experience{
+    text-align: center;
+}
+.service-item .service-text.experience h4{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.service-item .service-text.experience p{
+    text-align: center;
+    color: rgba(255,255,255,0.5);
+}
+.service-item .service-text.experience span{
+    background: #555;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    color: #fff;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.service-item .service-text.skill span{
+    font-size: 12px;
+    display: block;
+    color: rgba(255,255,255,0.5);
+}
+.service-item .service-text.skill h3{
+    text-align: left;
+    font-size: 20px;
 }
