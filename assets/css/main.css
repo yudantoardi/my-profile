@@ -1279,7 +1279,7 @@ a.phone {
     height: 80%;
     position: absolute;
     top: 10%;
-    background: url('../img/work-detail/3.jpg') fixed center no-repeat;
+    background: url('../img/portfolio-cover.png') center no-repeat;
     z-index: -4;
 }
 .service-text.experience{
