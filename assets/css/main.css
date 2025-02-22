@@ -746,7 +746,7 @@ a.menu-link.active {
 
 
 .service-icon img {
-    width: 70px;
+    width: auto;
 }
 
 .service-text {
@@ -758,6 +758,9 @@ a.menu-link.active {
     text-align: center;
 }
 
+.service-item.skills .service-icon img{
+    width: 70px;
+}
 
 .service-text p {
     margin-top: 20px;
@@ -817,7 +820,7 @@ a.menu-link.active {
     background-image: -moz-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 69, 69) 100%);
     background-image: -webkit-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 69, 69) 100%);
     background-image: -ms-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(255, 69, 69) 100%);
-    opacity: .5;
+    opacity: 0;
 }
 
 span.strip {
@@ -840,6 +843,7 @@ span.number {
     bottom: 20px;
     left: 40px;
     color: #fff;
+    z-index: 9;
 }
 
 .detail-project h3 {
@@ -1001,10 +1005,6 @@ p.author-text {
     font-style: normal;
     font-weight: 600;
     color: #f95343;
-}
-
-.item-partner {
-    opacity: .4;
 }
 
 .item-partner:hover {
@@ -1279,7 +1279,7 @@ a.phone {
     height: 80%;
     position: absolute;
     top: 10%;
-    background: url('../img/work-detail/3.jpg') center center no-repeat;
+    background: url('../img/work-detail/3.jpg') fixed center no-repeat;
     z-index: -4;
 }
 .service-text.experience{
@@ -1315,4 +1315,19 @@ a.phone {
 .service-item .service-text.skill h3{
     text-align: left;
     font-size: 20px;
+}
+
+.img-project{
+    position: relative;
+}
+.img-project::before{
+    content: "";
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }
